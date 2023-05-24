@@ -1,7 +1,4 @@
-// Create a script element
-var script = document.createElement('script');
-script.textContent = `
-(function() {
+javascript:(function() {
   // Create a container div for the UI
   var container = document.createElement('div');
   container.style.position = 'fixed';
@@ -58,7 +55,3 @@ script.textContent = `
     }
   });
 })();
-`;
-
-// Append the script element to the head
-document.head.appendChild(script);
