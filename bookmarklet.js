@@ -1,4 +1,7 @@
-javascript:(function() {
+// Create a script element
+var script = document.createElement('script');
+script.textContent = `
+(function() {
   // Create a container div for the UI
   var container = document.createElement('div');
   container.style.position = 'fixed';
@@ -23,7 +26,22 @@ javascript:(function() {
   var message = document.createElement('p');
   message.textContent = 'Press Shift + ] to close or open';
   message.style.color = '#fff';
+  message.style.fontSize = '24px';
+  message.style.fontWeight = 'bold';
+  message.style.textAlign = 'center';
   container.appendChild(message);
+
+  // Create a heading element
+  var heading = document.createElement('h1');
+  heading.textContent = 'Made By ProjectNoMore';
+  heading.style.color = 'red';
+  heading.style.fontSize = '32px';
+  heading.style.fontWeight = 'bold';
+  heading.style.textAlign = 'center';
+  heading.style.marginTop = '20px';
+
+  // Append the heading to the container
+  container.appendChild(heading);
 
   // Append the container to the document body
   document.body.appendChild(container);
@@ -40,3 +58,7 @@ javascript:(function() {
     }
   });
 })();
+`;
+
+// Append the script element to the head
+document.head.appendChild(script);
