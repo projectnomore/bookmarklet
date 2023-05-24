@@ -1,4 +1,4 @@
-# projectnomore executer&tm;
+# projectnomore executer&tm; (DO NOT USE RIGHT NOW)
 Launch all your favorite hacks with one bookmark.
 
 ## How to use
