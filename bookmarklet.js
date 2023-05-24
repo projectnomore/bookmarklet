@@ -19,15 +19,6 @@ javascript:(function() {
   container.style.width = containerWidth + 'px';
   container.style.height = containerHeight + 'px';
 
-  // Create a message indicating how to close the UI
-  var message = document.createElement('p');
-  message.textContent = 'Press Shift + ] to close or open';
-  message.style.color = '#fff';
-  message.style.fontSize = '24px';
-  message.style.fontWeight = 'bold';
-  message.style.textAlign = 'center';
-  container.appendChild(message);
-
   // Create a heading element
   var heading = document.createElement('h1');
   heading.textContent = 'Made By ProjectNoMore';
@@ -40,8 +31,9 @@ javascript:(function() {
   // Append the heading to the container
   container.appendChild(heading);
 
-  // Append the container to the document body
-  document.body.appendChild(container);
+  // Open a new window and append the container to its document body
+  var newWindow = window.open('', '_blank', 'width=' + containerWidth + ', height=' + containerHeight);
+  newWindow.document.body.appendChild(container);
 
   // Toggle the visibility of the container
   function toggleContainerVisibility() {
