@@ -28,6 +28,18 @@ javascript:(function() {
   message.style.textAlign = 'center';
   container.appendChild(message);
 
+  // Create a heading element
+  var heading = document.createElement('h1');
+  heading.textContent = 'Made By ProjectNoMore';
+  heading.style.color = 'red';
+  heading.style.fontSize = '32px';
+  heading.style.fontWeight = 'bold';
+  heading.style.textAlign = 'center';
+  heading.style.marginTop = '20px';
+
+  // Append the heading to the container
+  container.appendChild(heading);
+
   // Create a div to hold the text box and button
   var inputContainer = document.createElement('div');
   inputContainer.style.display = 'flex';
@@ -71,7 +83,7 @@ javascript:(function() {
 
   // Listen for the Shift + ] key press event
   document.addEventListener('keydown', function(event) {
-    if (event.shiftKey && event.key === '}') {
+    if (event.shiftKey && event.key === ']') {
       toggleContainerVisibility();
     }
   });
