@@ -1,4 +1,9 @@
 # projectnomore executer&tm; (DO NOT USE RIGHT NOW TESTING DIFFERENT BOOKMARKLETS UNTIL ALL ARE DONE)
+(press shift + ] or } to open once executed)
+
+
+
+
 Launch all your favorite hacks with one bookmark.
 
 ## How to use
