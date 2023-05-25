@@ -30,7 +30,7 @@ javascript:(function() {
 
   // Create a heading element
   var heading = document.createElement('h1');
-  heading.textContent = 'Made By ProjectNoMore';
+  heading.textContent = 'YOUTUBE HACKS (Made By ProjectNoMore)';
   heading.style.color = 'red';
   heading.style.fontSize = '32px';
   heading.style.fontWeight = 'bold';
@@ -88,10 +88,10 @@ javascript:(function() {
     }
   });
   
-  // Close the container when the } key is pressed
+  // Close or open the container when the } key is pressed
   document.addEventListener('keydown', function(event) {
     if (event.key === '}') {
-      container.style.display = 'none';
+      toggleContainerVisibility();
     }
   });
 })();
