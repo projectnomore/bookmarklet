@@ -30,7 +30,7 @@ javascript:(function() {
 
   // Create a heading element
   var heading = document.createElement('h1');
-  heading.textContent = 'Made By ProjectNoMore';
+  heading.textContent = 'YOUTUBE HACKS (Made By ProjectNoMore)';
   heading.style.color = 'red';
   heading.style.fontSize = '32px';
   heading.style.fontWeight = 'bold';
