@@ -94,4 +94,21 @@ javascript:(function() {
       container.style.display = 'none';
     }
   });
+  
+  // Prevent default browser behavior for Shift + ] and Shift + [ key combinations
+  document.addEventListener('keydown', function(event) {
+    if (event.shiftKey && (event.key === ']' || event.key === '[')) {
+      event.preventDefault();
+    }
+  });
+  
+  // Hide the mouse cursor when the container is visible
+  container.addEventListener('mouseenter', function() {
+    document.body.style.cursor = 'none';
+  });
+  
+  // Show the mouse cursor when the container is hidden
+  container.addEventListener('mouseleave', function() {
+    document.body.style.cursor = 'auto';
+  });
 })();
